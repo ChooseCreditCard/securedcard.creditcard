@@ -4,145 +4,229 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Secured Credit Cards – Build Credit With a Cash Deposit</title>
-  <meta name="description"
-        content="Learn how secured credit cards work, how the deposit unlocks your credit line, and how they can help you build or rebuild credit.">
+  <title>SecuredCard.Creditcard – How Secured Credit Cards Work</title>
+  <meta name="description" content="Understand how secured credit cards work: deposits, credit limits, reporting, fees and how issuers evaluate upgrading to unsecured cards. Neutral, documentation-style explanation." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://securedcard.creditcard/" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Secured Credit Cards – Build Credit With a Cash Deposit" />
-  <meta property="og:description"
-        content="Understand secured cards, credit building, deposits, reporting and how lenders set limits and upgrade paths." />
+  <meta property="og:title" content="SecuredCard.Creditcard – Secured Credit Cards Explained" />
+  <meta property="og:description" content="Learn how secured credit cards use deposits, how credit limits are set, and how issuers evaluate upgrades to unsecured products." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://securedcard.creditcard/" />
-  <meta property="og:image" content="https://securedcard.creditcard/preview.png" />
+  <meta property="og:image" content="https://choose.creditcard/preview.png?utm_source=securedcard.creditcard&utm_medium=referral&utm_campaign=og_image" />
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="/styles.css" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SecuredCard.Creditcard – Secured Credit Cards Explained" />
+  <meta name="twitter:description" content="Neutral overview of secured cards: deposits, credit limits, credit reporting and upgrade paths." />
+  <meta name="twitter:image" content="https://choose.creditcard/preview.png?utm_source=securedcard.creditcard&utm_medium=referral&utm_campaign=twitter_image" />
 
   <!-- GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-64FE63JQ3H"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-64FE63JQ3H');
   </script>
+
+  <!-- Tailwind for utility classes -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Shared minisite styles -->
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 
-<body>
-<header class="nav">
-  <div class="brand">
-    <div class="cc-logo">CC</div>
-    <span>SecuredCard.creditcard</span>
-  </div>
-  <nav class="links">
-    <a href="https://fin.creditcard/">Collection</a>
-    <a href="https://creditbuilder.creditcard/">Build Credit</a>
-    <a href="https://choose.creditcard/">Choose</a>
-  </nav>
-</header>
-
-<div class="wrap">
-
-  <!-- HERO -->
-  <section class="hero">
-    <h1>Secured Credit Cards</h1>
-    <p>Use a refundable cash deposit to build or rebuild your credit score.</p>
-    <a class="cta"
-       href="https://choose.creditcard/?utm_source=securedcard.creditcard&utm_medium=referral&utm_campaign=secured_spoke">
-      Compare Secured Cards
-    </a>
-  </section>
-
-  <!-- What is a secured card -->
-  <section class="section">
-    <h2>What is a secured credit card?</h2>
-    <p class="small">
-      A secured credit card requires a cash deposit that acts as your collateral.  
-      Your deposit typically becomes your credit limit.
-    </p>
-    <ul class="list">
-      <li>• Deposit $100–$500+ depending on issuer</li>
-      <li>• Spend like a normal credit card</li>
-      <li>• Builds your credit score with responsible use</li>
-      <li>• You get your deposit back when upgraded or closed</li>
-    </ul>
-  </section>
-
-  <!-- Why use one -->
-  <section class="section">
-    <h2>Who benefits from a secured card?</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>People with low/no credit</h3>
-        <p class="small">
-          Ideal if you have no credit history or a damaged score.
-        </p>
+<body class="bg-slate-950 text-slate-100">
+  <header class="site-header">
+    <div class="nav-inner max-w-6xl">
+      <div class="brand">
+        <div class="cc-logo">CC</div>
+        <div class="brand-text">
+          <div class="brand-title">SecuredCard.Creditcard</div>
+          <div class="brand-subtitle">Secured Credit Cards Explained</div>
+        </div>
       </div>
-      <div class="card">
-        <h3>Those rebuilding credit</h3>
-        <p class="small">
-          Consistent on-time payments rebuild your score over time.
-        </p>
-      </div>
-      <div class="card">
-        <h3>Students & newcomers</h3>
-        <p class="small">
-          A secured card can be the first step into the financial system.
-        </p>
-      </div>
-      <div class="card">
-        <h3>People needing limit control</h3>
-        <p class="small">
-          Your deposit means you choose your own starting limit.
-        </p>
-      </div>
+      <nav class="nav-links" aria-label="Page navigation">
+        <a href="#overview">Overview</a>
+        <a href="#mechanics">How It Works</a>
+        <a href="#compare">Compare</a>
+      </nav>
     </div>
-  </section>
+  </header>
 
-  <!-- How issuers evaluate -->
-  <section class="section">
-    <h2>How issuers manage secured cards</h2>
-    <ul class="list">
-      <li>• They hold your deposit in case of missed payments</li>
-      <li>• They report usage to credit bureaus monthly</li>
-      <li>• They may auto-upgrade you to an unsecured card after 6–18 months</li>
-      <li>• They monitor spend, repayment and utilization rate</li>
-    </ul>
-  </section>
+  <main class="cc-page">
 
-  <!-- Upgrade path -->
-  <section class="section">
-    <h2>When can you upgrade?</h2>
-    <p class="small">
-      Most issuers review your account for an upgrade after:
+    <!-- Breadcrumb -->
+    <div class="cc-breadcrumb">
+      <a href="https://choose.creditcard/?utm_source=securedcard.creditcard&utm_medium=referral&utm_campaign=breadcrumb">Home</a>
+      &nbsp;›&nbsp;
+      SecuredCard.Creditcard
+    </div>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>How Secured Credit Cards Help Build Credit</h1>
+        <p class="hero-lead">
+          Secured credit cards are built around a refundable security deposit. This explainer covers deposits, credit limits, reporting, upgrade paths and how issuers evaluate account behaviour — educational only, not personal advice.
+        </p>
+        <a class="cta" href="https://choose.creditcard/creditbuilder/?utm_source=securedcard.creditcard&utm_medium=referral&utm_campaign=hero_cta">
+          Explore the Credit-Builder hub
+        </a>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section id="overview" class="section">
+      <h2>What Is a Secured Credit Card?</h2>
+      <p>A secured credit card requires a refundable security deposit, which acts as collateral for the issuer. The deposit usually equals the credit limit, although some issuers offer higher limits after account review.</p>
+      <p>From a documentation perspective, secured cards behave exactly like normal credit cards at checkout: they run on the same networks, follow the same authorization steps and use monthly statements.</p>
+    </section>
+
+    <!-- Mechanics -->
+    <section id="mechanics" class="section">
+      <h2>How Deposits and Limits Work</h2>
+      <p>Issuer documentation typically highlights:</p>
+      <ul class="list">
+        <li><strong>Deposit amount</strong> – typically \$50–\$500, held as collateral.</li>
+        <li><strong>Credit limit</strong> – often equal to the deposit, sometimes reviewed after on-time payments.</li>
+        <li><strong>Reporting</strong> – many issuers report to major credit bureaus monthly.</li>
+        <li><strong>Refund conditions</strong> – deposit may be returned when upgraded or account is closed in good standing.</li>
+      </ul>
+      <p>Secured cards are mainly used by people establishing or rebuilding a credit file, but the mechanics are identical to normal credit cards.</p>
+    </section>
+
+    <section class="section">
+      <h2>Fees, APR and Account Requirements</h2>
+      <p>Fee schedules for secured cards often mention:</p>
+      <ul class="list">
+        <li><strong>Annual fees</strong> – not universal, depends on product tier.</li>
+        <li><strong>APR</strong> – standard purchase APR applies like any credit card.</li>
+        <li><strong>Deposit return rules</strong> – timing and conditions for refund.</li>
+        <li><strong>Upgrade criteria</strong> – number of on-time payments, utilisation habits and account reviews.</li>
+      </ul>
+      <p>Reading the issuer’s documentation is the only reliable source for upgrade requirements.</p>
+    </section>
+
+    <!-- Comparison -->
+    <section id="compare" class="section">
+      <h2>Secured vs Unsecured Starter Cards</h2>
+      <div class="table-wrap">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Aspect</th>
+              <th>Secured Card</th>
+              <th>Unsecured Starter Card</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Credit Limit</td>
+              <td>Based on deposit</td>
+              <td>Based on underwriting</td>
+            </tr>
+            <tr>
+              <td>Deposit Required</td>
+              <td>Yes, refundable</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>Upgrade Path</td>
+              <td>Frequently available</td>
+              <td>Not applicable</td>
+            </tr>
+            <tr>
+              <td>Credit Reporting</td>
+              <td>Often monthly</td>
+              <td>Often monthly</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="small">
+        For broader comparisons, visit the
+        <a href="https://choose.creditcard/creditbuilder/?utm_source=securedcard.creditcard&utm_medium=referral&utm_campaign=comparison_section">
+          Credit-Builder hub on Choose.Creditcard
+        </a>.
+      </p>
+    </section>
+
+    <!-- Cluster links -->
+    <section class="section">
+      <h2>Explore Related Credit-Builder Microsites</h2>
+      <div class="cluster-grid">
+
+        <a class="cluster-card" href="https://creditbuilder.creditcard/?utm_source=securedcard.creditcard&utm_medium=referral&utm_campaign=cluster_creditbuilder">
+          <h3>CreditBuilder.Creditcard</h3>
+          <p>How issuers structure credit-builder programs.</p>
+        </a>
+
+        <a class="cluster-card" href="https://creditscore.creditcard/?utm_source=securedcard.creditcard&utm_medium=referral&utm_campaign=cluster_creditscore">
+          <h3>CreditScore.Creditcard</h3>
+          <p>How card behaviour interacts with credit reporting models.</p>
+        </a>
+
+        <a class="cluster-card" href="https://poorcreditcard.creditcard/?utm_source=securedcard.creditcard&utm_medium=referral&utm_campaign=cluster_poorcreditcard">
+          <h3>PoorCreditcard.Creditcard</h3>
+          <p>Cards for users rebuilding credit histories.</p>
+        </a>
+
+        <a class="cluster-card" href="https://debits.creditcard/?utm_source=securedcard.creditcard&utm_medium=referral&utm_campaign=cluster_debits">
+          <h3>Debits.Creditcard</h3>
+          <p>How debit-style transactions differ from secured credit cards.</p>
+        </a>
+
+        <a class="cluster-card" href="https://prepaidcard.creditcard/?utm_source=securedcard.creditcard&utm_medium=referral&utm_campaign=cluster_prepaidcard">
+          <h3>PrepaidCard.Creditcard</h3>
+          <p>Comparison of prepaid vs secured vs starter credit cards.</p>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Collection section -->
+    <section class="section">
+      <h2>Part of The CreditCard Collection</h2>
+      <p class="small">
+        SecuredCard.Creditcard is one spoke in <strong>The CreditCard Collection</strong> — a network of focused microsites run by ronarn AS. Each page explains one concept using neutral, documentation-style language.
+      </p>
+      <p class="small">
+        We do not issue cards or provide personalized recommendations. This page summarizes how secured cards are described in issuer documentation so readers know where to locate key details.
+      </p>
+      <p class="small">
+        This site is informational only and does not provide financial, legal, investment or tax advice.
+      </p>
+
+      <!-- Hub snippet -->
+      <p class="text-xs text-slate-500 mt-6">
+        This page links into the
+        <a href="https://choose.creditcard/creditbuilder/?utm_source=securedcard.creditcard&utm_medium=referral&utm_campaign=hub_creditbuilder"
+           class="font-medium hover:text-slate-900">Credit-Builder hub</a>
+        on <a href="https://choose.creditcard/" class="font-medium hover:text-slate-900">Choose.Creditcard</a>.
+      </p>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="section">
+      <h2>Ready to Explore Credit-Builder Options?</h2>
+      <p class="small">
+        Use SecuredCard.Creditcard to understand how secured cards work — then explore the full Credit-Builder hub for structured comparisons.
+      </p>
+      <a class="cta" href="https://choose.creditcard/creditbuilder/?utm_source=securedcard.creditcard&utm_medium=referral&utm_campaign=bottom_cta">
+        Go to the Credit-Builder hub
+      </a>
+    </section>
+
+  </main>
+
+  <footer class="mini-footer">
+    <p class="mini-footer-main">© 2025 The CreditCard Collection — ronarn AS</p>
+    <p class="mini-footer-contact">
+      Contact: <a href="mailto:support@cc.creditcard">support@cc.creditcard</a>
     </p>
-    <ul class="list">
-      <li>• 6–12 months of on-time payments</li>
-      <li>• Low utilization</li>
-      <li>• No late fees</li>
-    </ul>
-  </section>
-
-  <!-- CTA -->
-  <section class="section">
-    <h2>Compare secured cards from top issuers</h2>
-    <p class="small">
-      SecuredCard.creditcard explains the fundamentals.  
-      To see real secured card products with deposit ranges, interest rates and upgrade options, open:
-    </p>
-    <a class="cta"
-       href="https://choose.creditcard/?utm_source=securedcard.creditcard&utm_medium=referral&utm_campaign=secured_spoke">
-      Open Choose.Creditcard
-    </a>
-  </section>
-
-  <footer class="footer">
-    Part of <strong>The CreditCard Collection</strong> — by ronarn  
-    <br>Contact: <a href="mailto:support@ronarn.com">support@ronarn.com</a>
   </footer>
-</div>
 </body>
 </html>
